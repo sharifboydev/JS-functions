@@ -8,9 +8,21 @@
 
 // myFirstFunction("salom")
 
-function finddegree(a) {
-    console.log(Math.sqrt(a));
+// function finddegree(a) {
+//     console.log(Math.sqrt(a));
+// }
+
+// finddegree(23)
+// finddegree(30)
+
+
+function greeting(name) {
+    if (name) {
+        return `Hello, ${name} how are you doing`
+    } else {
+        return "Hello world"
+    }
 }
 
-finddegree(23)
-finddegree(30)
+console.log(greeting("John"));
+console.log(greeting(""));
