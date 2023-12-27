@@ -43,3 +43,17 @@
 // } else {
 //     console.log("Error");
 // }
+
+
+function calculateBMI(weight, height) {
+    let heightInMeters = height / 100;
+    let bmi = weight / (heightInMeters * heightInMeters);
+    return bmi.toFixed(1);
+}
+
+
+let weight = 70;
+let height = 175;
+
+let bmi = calculateBMI(weight, height);
+console.log("BMI: " + bmi);
