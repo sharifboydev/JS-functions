@@ -16,13 +16,30 @@
 // finddegree(30)
 
 
-function greeting(name) {
-    if (name) {
-        return `Hello, ${name} how are you doing`
-    } else {
-        return "Hello world"
-    }
-}
+// function greeting(name) {
+//     if (name) {
+//         return `Hello, ${name} how are you doing`
+//     } else {
+//         return "Hello world"
+//     }
+// }
 
-console.log(greeting("John"));
-console.log(greeting(""));
+// console.log(greeting("John"));
+// console.log(greeting(""));
+
+// const userHeight = prompt("height")
+// const userWeight = prompt("weight")
+
+// const bmi = ((userWeight / (userHeight * userHeight)) * 10000).toFixed(1);
+
+// if (bmi < 18.5) {
+//     console.log("Underweight", bmi);
+// } else if (bmi >= 18.5 && bmi < 24.9) {
+//     console.log("Normal weight", bmi);
+// } else if (bmi >= 25 && bmi < 29.9) {
+//     console.log("OverWeight", bmi);
+// } else if (bmi >= 30) {
+//     console.log("Obesity", bmi);
+// } else {
+//     console.log("Error");
+// }
