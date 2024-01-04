@@ -45,15 +45,63 @@
 // }
 
 
-function calculateBMI(weight, height) {
-    let heightInMeters = height / 100;
-    let bmi = weight / (heightInMeters * heightInMeters);
-    return bmi.toFixed(1);
+// function calculateBMI(height, weight) {
+//     const bmi = weight / (height * height);
+
+//     if (bmi < 18.5) {
+//         console.log("Underweight", bmi);
+//     } else if (bmi >= 18.5 && bmi < 24.9) {
+//         console.log("Normal", bmi);
+//     } else if (bmi >= 25 && bmi < 19.9) {
+//         console.log("Overweight", bmi);
+//     } else if (bmi >= 30) {
+//         console.log("Obesity", bmi);
+//     } else {
+//         console.log("Error");
+//     }
+//  }
+
+// calculateBMI(1.5, 80);
+
+
+function calculateYear(a) {
+    console.log(`Siz ${new Date().getFullYear() - a}-yilda tug'ilgansiz`);
 }
 
+calculateYear(23)
 
-let weight = 70;
-let height = 175;
+const value = 12310;
 
-let bmi = calculateBMI(weight, height);
-console.log("BMI: " + bmi);
+// function cutNUmbers(number) {
+//     return +number.toFixed(2);
+// }
+
+// let userBudgetSUM = +prompt("Sum kiriting")
+// let userBudgetDollor = +prompt("USD kiriting")
+
+function convertUZStoUSd(money) {
+    const sum = money / value;
+    const result = cutNUmbers(sum);
+    alert(`$ ${result}`);
+}
+
+function convertUSDtoSUM(money) {
+    const dollor = money * value;
+    const result = cutNUmbers(dollor)
+    alert(`${result.toLocaleString()} sum`)
+}
+
+// convertUZStoUSd(userBudgetSUM);
+
+// convertUSDtoSUM(userBudgetDollor);
+
+
+function mouthSize (animal) {
+    if (animal == "alligator") {
+        console.log("small");
+    } else {
+        console.log("wide");
+    }
+}
+
+mouthSize()
